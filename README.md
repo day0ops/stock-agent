@@ -1,14 +1,14 @@
 # stock-agent
 
-[\![Release](https://github.com/day0ops/stock-agent/actions/workflows/release.yml/badge.svg)](https://github.com/day0ops/stock-agent/actions/workflows/release.yml)
-[\![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE)
-[\![Image](https://img.shields.io/badge/registry-GAR-4285F4?logo=google-cloud)](https://console.cloud.google.com/artifacts/docker/field-engineering-apac/australia-southeast1/kasunt)
+[![Release](https://github.com/day0ops/stock-agent/actions/workflows/release.yml/badge.svg)](https://github.com/day0ops/stock-agent/actions/workflows/release.yml)
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE)
+[![Image](https://img.shields.io/badge/registry-GAR-4285F4?logo=googlecloud)](https://console.cloud.google.com/artifacts/docker/field-engineering-apac/australia-southeast1/kasunt)
 
-Google ADK-based agent for real-time stock price queries, exposed through [agentgateway](https://agentgateway.dev).
+FastAPI agent wrapping a stock ADK agent, routing tool calls through [agentgateway](https://agentgateway.dev).
 
 ## What it does
 
-Uses the [Google Agent Development Kit](https://google.github.io/adk-docs/) to build a conversational agent that fetches live stock prices and market data, accessible via agentgateway.
+Accepts natural language queries about stocks, processes them with an ADK-based agent, and forwards MCP tool calls to the stock-server-mcp via agentgateway.
 
 ## Usage
 
